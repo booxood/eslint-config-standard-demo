@@ -1,0 +1,46 @@
+parser: babel-eslint
+
+# parserOptions:
+#   sourceType: module
+#   allowImportExportEverywhere: true
+
+extends:
+  - standard
+  - standard-react
+
+rules:
+  comma-dangle:
+    - 2
+    - always-multiline
+  object-curly-spacing:
+    - 2
+    - always
+  new-cap: 2
+  space-before-function-paren:
+    - 2
+    - always
+  no-var: 2
+  # indent:
+  #   - 2
+  #   - 2
+  no-console: 1
+  no-unused-vars: 1
+  no-inner-declarations: 2
+  arrow-body-style:
+    - warn
+    - as-needed
+    - requireReturnForObjectLiteral: false
+  no-restricted-syntax:
+    - 2
+    - DebuggerStatement
+    - LabeledStatement
+    - WithStatement
+  camelcase: 0
+
+  react/prop-types:
+    - 2
+    -
+      ignore:
+        - match
+        - location
+        - history
